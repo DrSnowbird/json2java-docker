@@ -9,9 +9,9 @@ make build
 # Run (Docker-based command line)
 
 ```
-./json2java.sh [<options>]
+./run.sh [<options>]
 ```
-The command will transfer all [<options>] to actual **jsonschema2pojo [<options>]** inside the Container. See the guide for usage below.
+The command will transfer all **[<options>]** to actual **jsonschema2pojo [<options>]** inside the Container. For options, see the guide for usage below.
 
 ## Examples
 The default ".env" automatically map ./json into Container. Hence the following example will work correctly. If you want to use different JSON file on your Host directory, you need to edit ".env" to define proper Volume mapping to work.
@@ -40,6 +40,7 @@ json/java-gen/my-package/Pari.java
 Note the above "-s <json file>" is the location relative to the inside of Container (not your host OS)
 
 ## Usage
+Note that "*" Options are required (mandatory) below.
 ```
 Usage: jsonschema2pojo [options]
   Options:
